@@ -19,7 +19,7 @@ namespace APICatalogo.Controllers
         //Get
         [HttpGet]
         [Authorize]
-        public async Task<ActionResult<IEnumerable<Categoria>>> GetCategoria() {
+         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategoria() {
         
             return await _context.Categoria.ToListAsync();
         }
